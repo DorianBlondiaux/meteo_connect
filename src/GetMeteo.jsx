@@ -6,9 +6,7 @@ function GetMeteo() {
 
     const [isLoading, setLoading] = useState(true);
     const [myMeteo, setMyMeteo] = useState();
-    const apiUrl = `https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=weathercode,
-    apparent_temperature_max,apparent_temperature_min,precipitation_sum,windspeed_10m_max,sunrise,
-    sunset&timezone=Europe%2FLondon`;
+    const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=weathercode,apparent_temperature_max,apparent_temperature_min,precipitation_sum,windspeed_10m_max,sunrise,sunset&timezone=Europe%2FLondon';
     
     useEffect(() => {
         axios.get(apiUrl).then(response => {
