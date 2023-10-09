@@ -8,7 +8,7 @@ function App() {
 
   const [isLoading, setLoading] = useState(true);
   const [myMeteo, setMyMeteo] = useState();
-  const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=weathercode,apparent_temperature_max,apparent_temperature_min,precipitation_sum,windspeed_10m_max,sunrise,sunset&timezone=Europe%2FLondon';
+  const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=50.6942&longitude=3.1746&daily=weathercode,apparent_temperature_max,apparent_temperature_min,precipitation_sum,windspeed_10m_max,sunrise,sunset&timezone=Europe%2FLondon';
 
   useEffect(() => {
     axios.get(apiUrl).then(response => {
@@ -24,9 +24,11 @@ function App() {
   return (
     <div className="App">
         <CurrentDay myMeteo={myMeteo} isLoading={isLoading}></CurrentDay>
+        <p>Météo des prochains jours:</p>
         {myMeteo.daily.time.slice(1).map((day, i) => (
           <NextDays key={i} time={day} temperature_max={myMeteo.daily.apparent_temperature_max[i + 1]} 
-          isLoading={isLoading} tempUnit={myMeteo.daily_units.apparent_temperature_max}></NextDays>
+          isLoading={isLoading} tempUnit={myMeteo.daily_units.apparent_temperature_max}
+          weatherCode={myMeteo.daily.weathercode[i + 1]}></NextDays>
         ))}
     </div>
   );
