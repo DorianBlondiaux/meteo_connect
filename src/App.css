@@ -3,7 +3,6 @@
   background-color:#59b2e9;
   color: white;
   font-weight: 450;
-  height: 100vh;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -17,37 +16,25 @@
 .card-body-today {
 	background-color: rgba(255, 255, 255, 0.3);
 	position: relative;
-	border-radius: 10%;
+	border-radius: 5%;
 	color: white;
 	list-style-type: none;
 	text-shadow: rgb(29, 29, 29) 1px 0 10px;
   width: 300px;
-  height: 200px;
-  
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
-.today {
-	position: relative;
-
+.card-body-today li {
+  margin-bottom: 10px;
 }
 
 .temperature_max {
 	font-size: 40px;
 	position: relative;
-	
-}
-
-.temperature_min, .precipitation, .windspeed {
-	position: relative;
-
-}
-
-.windspeed {
-	
-}
-
-.sunrise, .sunset {
-	position: relative;
+  display:flex;
+	justify-content: space-around;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -116,6 +103,10 @@ padding: 5vh 0vw;
   }
   .card-body{
     margin: 2vh 0;
+  }
+
+  .card-body-today {
+    width: 250px;
   }
   
 }
