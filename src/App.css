@@ -33,8 +33,16 @@
 
 .card-content{
   display: inline-block;
-  width: 33%;
+  width: 100%;
+  height: 3.5vh;
 }
+
+.card-body.hoverbody:hover{
+background-color: rgba(255, 255, 255, 0.104);
+border-radius: 20px;
+padding: 5vh 0vw;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -43,4 +51,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Weather {
+  width: 80%;
+  height: 20vh;
+  border: 1px solid rgba(255, 255, 255, 0.558);
+  border-radius: 50px;
+  margin: 2% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.105);
+}
+
+@media screen and (max-width: 600px) {
+  .Weather {
+    height: auto;
+    flex-direction: column;
+    border-radius: 30px;
+  }
+  .card-body{
+    margin: 2vh 0;
+  }
+  
 }

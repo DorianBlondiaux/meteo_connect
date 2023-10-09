@@ -8,7 +8,7 @@ function NextDays(props) {
     }
     return (
       <div className="card text-center m-3">
-        <div className="card-body">
+        <div className="card-body hoverbody">
             <div className ="card-content">{getDateDay(props.time)}</div>
             <div className ="card-content">{getWeatherIcone(props.weatherCode)}</div>
             <div className ="card-content">{props.temperature_max} {props.tempUnit}</div>
