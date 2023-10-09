@@ -1,16 +1,12 @@
 import React from "react";
+import getDateDay from "./UtilityFonctions";
 
 function CurrentDay(props) {
-
-  if (props.isLoading) {
-    return <div className="App">Loading...</div>;
-  }
   return (
     <div className="card text-center m-3">
       <h5 className="card-header">Simple GET Request</h5>
       <div className="card-body">
-        <li><p>Today</p></li>
-        <li>{props.myMeteo.daily.weathercode[0]}</li>
+        <li>{getDateDay(props.myMeteo.daily.time[0])}, Today</li>
         <li>{props.myMeteo.daily.apparent_temperature_max[0]}{props.myMeteo.daily_units.apparent_temperature_max}</li>
         <li>{props.myMeteo.daily.apparent_temperature_min[0]}{props.myMeteo.daily_units.apparent_temperature_min}</li>
         <li>{props.myMeteo.daily.precipitation_sum[0]}{props.myMeteo.daily_units.precipitation_sum}</li>
