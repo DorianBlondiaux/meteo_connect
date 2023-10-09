@@ -1,5 +1,5 @@
 import React from "react";
-import getDateDay from "./UtilityFonctions";
+import getDateDay from "./Utility/GetDateDay";
 
 function CurrentDay(props) {
   let sunrise = new Date(props.myMeteo.daily.sunrise[0]);
