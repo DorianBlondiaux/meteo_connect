@@ -26,7 +26,8 @@ function App() {
       <header className="App-header">
         <CurrentDay myMeteo={myMeteo} isLoading={isLoading}></CurrentDay>
         {myMeteo.daily.time.slice(1).map((day, i) => (
-          <NextDays key={i} time={day} temperature_max={myMeteo.daily.apparent_temperature_max[i + 1]} isLoading={isLoading}></NextDays>
+          <NextDays key={i} time={day} temperature_max={myMeteo.daily.apparent_temperature_max[i + 1]} 
+          isLoading={isLoading} tempUnit={myMeteo.daily_units.apparent_temperature_max}></NextDays>
         ))}
       </header>
     </div>
