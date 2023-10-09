@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color:#59b2e9;
+  color: white;
+  font-weight: 450;
 }
 
 .App-logo {
@@ -28,6 +31,26 @@
   color: #61dafb;
 }
 
+.card-body{
+  flex-direction: row;
+}
+.card-content{
+  /* Position */
+  display: ;
+  /* flex-direction: column; */
+  width: 33%;
+
+
+  /* Texte */
+  color: #FFF;
+  text-shadow: -1.854285717010498px 2.781428575515747px 0.927142858505249px rgba(0, 0, 0, 0.10);
+  font-family: Overpass;
+  font-size: 16.689px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -44,19 +67,12 @@
 
 } */
 
-.card-content{
+/* .card-content{
 
-  /* position */
+  position
   position: relative ;
   display : inline-flex;
   margin : 50px;
   
-  /* Texte */
-  color: #FFF;
-  text-shadow: -1.854285717010498px 2.781428575515747px 0.927142858505249px rgba(0, 0, 0, 0.10);
-  font-family: Overpass;
-  font-size: 16.689px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
+
+} */
