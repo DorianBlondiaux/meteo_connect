@@ -3,6 +3,8 @@
   background-color:#59b2e9;
   color: white;
   font-weight: 450;
+  border-radius: 15px;
+  padding:10px;
 }
 
 .App-logo {
@@ -31,9 +33,19 @@
   color: #61dafb;
 }
 
-.card-content{
+.card-content-temp, .card-content-jour, .card-content-icone{
   display: inline-block;
-  width: 33%;
+  width: 30%;
+}
+
+
+.card-content-jour{
+  text-align: left;
+  margin-left:10px;
+}
+
+.card-body{
+  margin: auto;
 }
 
 @keyframes App-logo-spin {
