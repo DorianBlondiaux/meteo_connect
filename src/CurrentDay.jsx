@@ -7,7 +7,7 @@ function CurrentDay(props) {
 
   return (
     <div className="card text-center m-3">
-      <h5 className="card-header">Simple GET Request</h5>
+      <h5 className="card-header">Quel temps fera-t-il aujourd'hui?</h5>
       <div className="card-body">
         <li>{getDateDay(props.myMeteo.daily.time[0])}, Today</li>
         <li>{props.myMeteo.daily.apparent_temperature_max[0]} {props.myMeteo.daily_units.apparent_temperature_max}</li>

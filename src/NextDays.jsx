@@ -7,7 +7,7 @@ function NextDays(props) {
     }
     return (
       <div className="card text-center m-3">
-        <h5 className="card-header">Simple GET Request</h5>
+        <h5 className="card-header"></h5>
         <div className="card-body">
             <li>{getDateDay(props.time)}</li>
             <li>{props.temperature_max} {props.tempUnit}</li>
