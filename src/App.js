@@ -23,13 +23,15 @@ function App() {
 
   return (
     <div className="App">
-        <CurrentDay myMeteo={myMeteo} isLoading={isLoading}></CurrentDay>
-        <p>Météo des prochains jours:</p>
+      <CurrentDay myMeteo={myMeteo} isLoading={isLoading}></CurrentDay>
+      <p>Météo des prochains jours:</p>
+      <div className="Weather">
         {myMeteo.daily.time.slice(1).map((day, i) => (
-          <NextDays key={i} time={day} temperature_max={myMeteo.daily.apparent_temperature_max[i + 1]} 
-          isLoading={isLoading} tempUnit={myMeteo.daily_units.apparent_temperature_max}
-          weatherCode={myMeteo.daily.weathercode[i + 1]}></NextDays>
+          <NextDays key={i} time={day} temperature_max={myMeteo.daily.apparent_temperature_max[i + 1]}
+            isLoading={isLoading} tempUnit={myMeteo.daily_units.apparent_temperature_max}
+            weatherCode={myMeteo.daily.weathercode[i + 1]}></NextDays>
         ))}
+      </div>
     </div>
   );
 }
