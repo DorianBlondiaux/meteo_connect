@@ -45,7 +45,18 @@
 } */
 
 .card-content{
-   display : inline-flex;
+
+  /* position */
+  position: relative ;
+  display : inline-flex;
+  margin : 50px;
   
-  margin : 50px;  
+  /* Texte */
+  color: #FFF;
+  text-shadow: -1.854285717010498px 2.781428575515747px 0.927142858505249px rgba(0, 0, 0, 0.10);
+  font-family: Overpass;
+  font-size: 16.689px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
