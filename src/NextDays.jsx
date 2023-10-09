@@ -9,8 +9,9 @@ function NextDays(props) {
       <div className="card text-center m-3">
         <h5 className="card-header">Simple GET Request</h5>
         <div className="card-body">
-            <li>{getDateDay(props.time)}</li>
-            <li>{props.temperature_max} {props.tempUnit}</li>
+            <div class ="card-content">{getDateDay(props.time)}</div>
+            <div class ="card-content">XX</div>
+            <div class ="card-content">{props.temperature_max} {props.tempUnit}</div>
         </div>
       </div>
     );
