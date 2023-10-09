@@ -14,8 +14,6 @@
 	background-color: rgba(255, 255, 255, 0.3);
 	position: relative;
 	border-radius: 10%;
-	padding: 50px;
-	width: 250px;
 	color: white;
 	list-style-type: none;
 	text-shadow: rgb(29, 29, 29) 1px 0 10px;
@@ -24,43 +22,26 @@
 
 .today {
 	position: relative;
-	top: -30px;
-	left: -80px;
+
 }
 
 .temperature_max {
 	font-size: 50px;
 	position: relative;
-	left: -80px;
-	margin-bottom: -35px;
+	
 }
 
 .temperature_min, .precipitation, .windspeed {
 	position: relative;
-	margin-bottom: 20px;
-	bottom: -80px;
-	left: -90px;
-	font-size: 20px;
+
 }
 
 .windspeed {
-	margin-bottom: -5px;
+	
 }
 
 .sunrise, .sunset {
 	position: relative;
-	margin-bottom: 20px;
-	bottom: 5px;
-	right: -90px;
-	font-size: 20px;
-}
-
-.imgsoleil {
-	width: 180px;
-	margin: 0;
-	position: absolute;
-	right: -5px;
-	top: -15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
