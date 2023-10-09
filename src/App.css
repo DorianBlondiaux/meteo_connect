@@ -36,7 +36,7 @@
 }
 .card-content{
   /* Position */
-  display: ;
+  display: inline-flex;
   /* flex-direction: column; */
   width: 33%;
 
