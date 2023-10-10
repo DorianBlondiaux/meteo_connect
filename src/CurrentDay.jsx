@@ -15,13 +15,12 @@ function CurrentDay(props) {
         <li className="temperature_min"> ❄️ {props.myMeteo.daily.apparent_temperature_min[0]} {props.myMeteo.daily_units.apparent_temperature_min}</li>
         <li className="precipitation"> 🌧️ {props.myMeteo.daily.precipitation_sum[0]} {props.myMeteo.daily_units.precipitation_sum}</li>
         <li className="windspeed"> 💨 {props.myMeteo.daily.windspeed_10m_max[0]} {props.myMeteo.daily_units.windspeed_10m_max}</li>
-        <li className="sunrise"> ☀️ {sunrise.getHours()}:{sunrise.getMinutes()}</li>
-        <li className="sunset"> 🌙 {sunset.getHours()}:{sunset.getMinutes()}</li>
+        <li className="sunrise"> ☀️ {sunrise.getHours()}:{String(sunrise.getMinutes()).padStart(2, '0')}</li>
+        <li className="sunset"> 🌙 {sunset.getHours()}:{String(sunset.getMinutes()).padStart(2, '0')}</li>
       </div>
     </div>
   );
 
 }
-
 
 export default CurrentDay;
