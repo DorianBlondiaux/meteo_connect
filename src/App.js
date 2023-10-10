@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <CurrentDay myMeteo={myMeteo} isLoading={isLoading}></CurrentDay>
-      <p>Météo des prochains jours:</p>
+      <p>Next days weather:</p>
       <div className="Weather">
         {myMeteo.daily.time.slice(1).map((day, i) => (
           <NextDays key={i} time={day} temperature_max={myMeteo.daily.apparent_temperature_max[i + 1]}
